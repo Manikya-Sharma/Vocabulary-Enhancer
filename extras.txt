@@ -1,0 +1,17 @@
+"""
+from PyDictionary import PyDictionary
+from english_words import english_words_set as e
+from random import choice
+
+dictionary = PyDictionary()
+
+e = list(e)
+
+while True:
+    print("-----------------------")
+    word = choice(e)
+    mean = dictionary.meaning(word)
+    if mean == None:
+        continue
+    print(word,":",mean) 
+"""
